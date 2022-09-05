@@ -1,9 +1,6 @@
 .referral-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36, 1.17, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -21,11 +18,8 @@
 }
 
 .referral-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14, 1.14, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   padding: 27px;

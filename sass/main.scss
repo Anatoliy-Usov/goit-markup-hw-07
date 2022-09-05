@@ -2,8 +2,10 @@
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
+@import './utils/mixin';
 @import './components/container';
 @import './base/section';
+
 @import './bloks/header';
 @import './bloks/hero';
 @import './bloks/skill';

@@ -10,11 +10,8 @@
 }
 
 .team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17x;
+  @include font(700, 36, 1.17, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -58,18 +55,13 @@
 }
 
 .team-item-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(500, 16, 1.19, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 
 .team-item-after-title {
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(null, 16, 1.19, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 16px;
 }

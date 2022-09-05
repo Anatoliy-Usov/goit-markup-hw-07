@@ -3,119 +3,93 @@
   width: 100%;
   z-index: 10;
   margin: auto 0;
+  &__container {
+    background-color: var(--main-color-white);
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+  }
+  &__contact {
+    display: flex;
+    background-color: transparent;
+    font: var(--main-color-grey);
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    fill: var(--main-color-blue);
+  }
+  &__mail,
+  &__tel {
+    @include font(500, 14, 1.14, 0.02);
+    display: flex;
+    align-items: center;
+    color: var(--main-color-grey);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__mail:hover,
+  &__mail:focus,
+  &__tel:hover,
+  &__tel:focus {
+    color: var(--main-color-blue);
+  }
 }
 
-header .container {
-  background-color: var(--main-color-white);
-  border-bottom: 1px solid #ececec;
-  display: flex;
-  align-items: center;
-}
-
-.logo-base {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo-web {
+.logo__web {
   color: var(--main-color-blue);
 }
 
-.logo-Stu-header {
+.logo__Stu-header {
   color: #000000;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
-}
-
-.logo-base {
-  margin-right: 93px;
-}
-
-.header-list {
-  display: flex;
-  column-gap: 50px;
-  margin-left: auto;
-}
-
-.header-item {
-  position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: inherit;
-  padding: 32px 0;
-  display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-item.link.choice::after {
-  content: '';
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background: #2196f3;
-}
-
-.header-item:hover,
-.header-item:focus {
-  color: var(--main-color-blue);
+  &__logo-base {
+    font-family: 'Raleway';
+    @include font(700, 26, 1.19, 0.03);
+    margin-right: 93px;
+  }
+  &__list {
+    display: flex;
+    column-gap: 50px;
+    margin-left: auto;
+  }
+  &__link {
+    @include font(500, 14, 1.14, 0.02);
+    position: relative;
+    color: inherit;
+    padding: 32px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link.link.choice::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196f3;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--main-color-blue);
+  }
 }
 
 .choice {
   color: var(--main-color-blue);
 }
 
-.header-list-nav {
-  margin-left: auto;
-}
-
-.header-list-item {
-  display: flex;
-  background-color: transparent;
-  font: var(--main-color-grey);
-}
-
-.header-link-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.header-link-icon:hover,
-.header-link-icon:focus {
-  fill: var(--main-color-blue);
-}
-
-.header-mail,
-.header-tel {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-color-grey);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--main-color-blue);
-}
 .main {
   padding-top: 80px;
 }
