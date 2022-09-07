@@ -1,3 +1,7 @@
+.referral {
+  padding-bottom: 0;
+}
+
 .referral-title {
   @include font(700, 36, 1.17, 0.03);
   text-align: center;
@@ -21,6 +25,6 @@
   @include font(700, 14, 1.14, 0.03);
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-color-white);
   padding: 27px;
 }
