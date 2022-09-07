@@ -6,10 +6,16 @@
   --main-color-white: #ffffff;
   --main-color-btn-portfolio: #f5f4fa;
   --main-color-btntext-portfolio: #212121;
+  --main-color-text: #212121;
   --main-color-line: #ececec;
   --main-color-black: #000000;
   --main-color-footer: #2f303a;
   --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color-text);
 }
 
 @mixin font($fw, $fs, $lh, $ls) {
