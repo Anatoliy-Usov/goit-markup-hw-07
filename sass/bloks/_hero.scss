@@ -2,8 +2,10 @@
   padding-top: 80px;
 }
 .hero {
+  background-color: rgba(26, 20, 20, 0.429);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Img-header.jpg);
+    url(../images/img-header.jpg);
+
   max-width: 1600px;
   height: 600px;
   padding: 200px 0;
